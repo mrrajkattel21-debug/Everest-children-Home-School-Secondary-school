@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Programmes – Everest Academy</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-inner container">
+    <a href="index.html" class="logo"><div class="logo-icon">🏫</div>Everest Academy</a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li><li><a href="admissions.html">Admissions</a></li>
+      <li><a href="teachers.html">Teachers</a></li><li><a href="programmes.html">Programmes</a></li>
+      <li><a href="events.html">Events</a></li><li><a href="notices.html">Notices</a></li>
+      <li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="admissions.html" class="btn btn-gold">Apply Now</a></div>
+    <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div id="mobile-nav">
+  <span onclick="toggleMenu()" class="mobile-close">✕</span>
+  <a href="about.html">About</a><a href="admissions.html">Admissions</a><a href="teachers.html">Teachers</a>
+  <a href="programmes.html">Programmes</a><a href="events.html">Events</a><a href="notices.html">Notices</a>
+  <a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+  <a href="admissions.html" class="btn btn-gold" style="margin-top:10px;text-align:center;">Apply Now</a>
+</div>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span style="color:var(--gold2);">Programmes</span></div>
+    <h1>Our Programmes</h1>
+    <p>A comprehensive curriculum designed to challenge, inspire, and prepare every student for a bright and purposeful future.</p>
+  </div>
+</div>
+
+<section class="section" style="background:var(--cream);">
+  <div class="container">
+    <div class="tag">Academics</div>
+    <h2 class="section-title">Academic Programmes</h2>
+    <p class="section-sub">From early childhood to SEE preparation, our curriculum nurtures curiosity and builds excellence.</p>
+    <div class="grid-3 fade-in">
+      <div class="prog-card"><div class="prog-icon">🧒</div><h4>Pre-School Programme</h4><p>A nurturing environment for early learners to develop foundational skills through play-based learning.</p><ul><li>Montessori approach</li><li>Phonics & numeracy</li><li>Creative arts & music</li><li>Social development</li></ul></div>
+      <div class="prog-card"><div class="prog-icon">📖</div><h4>Primary Programme (1–5)</h4><p>Building strong academic foundations while fostering curiosity, creativity and a love of learning.</p><ul><li>Core subjects (Maths, English, Science)</li><li>Nepali & Social Studies</li><li>Computer literacy</li><li>Sports & arts</li></ul></div>
+      <div class="prog-card"><div class="prog-icon">🔬</div><h4>Secondary Programme (6–10)</h4><p>Rigorous academic preparation for SEE examinations with personalised guidance and support.</p><ul><li>SEE Board preparation</li><li>Optional subjects</li><li>Career counselling</li><li>Leadership activities</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--white);">
+  <div class="container">
+    <div class="tag">Enrichment</div>
+    <h2 class="section-title">Co-Curricular Programmes</h2>
+    <p class="section-sub">We believe in developing the whole student — beyond the classroom.</p>
+    <div class="grid-3 fade-in">
+      <div class="prog-card"><div class="prog-icon">🎨</div><h4>Arts & Culture</h4><p>Dance, music, visual arts, and drama programmes that celebrate creativity and Nepali heritage.</p><ul><li>Classical & modern dance</li><li>Visual arts studio</li><li>School orchestra</li><li>Annual cultural festival</li></ul></div>
+      <div class="prog-card"><div class="prog-icon">⚽</div><h4>Sports & Athletics</h4><p>Comprehensive sports programme promoting teamwork, fitness, discipline, and healthy competition.</p><ul><li>Football, cricket, basketball</li><li>Athletics & swimming</li><li>Yoga & meditation</li><li>Inter-school tournaments</li></ul></div>
+      <div class="prog-card"><div class="prog-icon">💻</div><h4>STEM & Technology</h4><p>Hands-on learning in science, technology, engineering, and mathematics for 21st-century skills.</p><ul><li>Robotics & coding</li><li>Science laboratory</li><li>Maths olympiad</li><li>Innovation challenge</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- Curriculum Highlight -->
+<section class="section" style="background:var(--navy);color:var(--white);">
+  <div class="container">
+    <div style="text-align:center;max-width:700px;margin:0 auto 50px;" class="fade-in">
+      <div class="tag" style="background:rgba(232,184,75,.25);color:var(--gold2);">Curriculum</div>
+      <h2 class="section-title" style="color:var(--white);">Why Our Curriculum Works</h2>
+      <p style="color:rgba(255,255,255,.65);">Our curriculum is carefully designed to meet national standards while preparing students for a global future.</p>
+    </div>
+    <div class="grid-3 fade-in">
+      <div style="background:rgba(255,255,255,.07);border-radius:12px;padding:28px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;">📊</div>
+        <h4 style="margin-bottom:8px;font-size:1rem;">Data-Driven Teaching</h4>
+        <p style="font-size:.86rem;color:rgba(255,255,255,.6);">Regular assessments and analytics help teachers personalise instruction for each student.</p>
+      </div>
+      <div style="background:rgba(255,255,255,.07);border-radius:12px;padding:28px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;">🧪</div>
+        <h4 style="margin-bottom:8px;font-size:1rem;">Hands-On Learning</h4>
+        <p style="font-size:.86rem;color:rgba(255,255,255,.6);">Labs, projects, and real-world applications make learning meaningful and memorable.</p>
+      </div>
+      <div style="background:rgba(255,255,255,.07);border-radius:12px;padding:28px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;">🌐</div>
+        <h4 style="margin-bottom:8px;font-size:1rem;">Global Standards</h4>
+        <p style="font-size:.86rem;color:rgba(255,255,255,.6);">Aligned with international best practices while staying rooted in the Nepal national curriculum.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="logo" style="margin-bottom:8px;"><div class="logo-icon">🏫</div> Everest Academy</a><p>Nurturing excellence since 1999.</p></div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="about.html">About Us</a></li><li><a href="admissions.html">Admissions</a></li><li><a href="teachers.html">Teachers</a></li><li><a href="programmes.html">Programmes</a></li><li><a href="events.html">Events</a></li></ul></div>
+      <div class="footer-col"><h4>Programmes</h4><ul><li><a href="programmes.html">Pre-School</a></li><li><a href="programmes.html">Primary</a></li><li><a href="programmes.html">Secondary</a></li><li><a href="programmes.html">STEM</a></li><li><a href="programmes.html">Arts & Sports</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li><a href="contact.html">📍 Itahari, Sunsari</a></li><li><a href="contact.html">📞 025-123456</a></li><li><a href="contact.html">📧 info@everestacademy.edu.np</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Everest Academy. All rights reserved.</p><div class="social-links"><div class="social-btn">📘</div><div class="social-btn">📺</div><div class="social-btn">📸</div><div class="social-btn">💬</div></div></div>
+  </div>
+</footer>
+
+<script src="shared.js"></script>
+</body>
+</html>

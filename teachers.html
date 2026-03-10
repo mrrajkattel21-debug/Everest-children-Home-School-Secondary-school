@@ -1,16 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teachers</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Teachers – Everest Academy</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="index.css"/>
 </head>
 <body>
-    <h1>Our Teachers</h1>
-    <ul>
-        <li>Mrs. Smith - Math</li>
-        <li>Mr. Johnson - Science</li>
-        <li>Ms. Lee - English</li>
+
+<nav id="navbar">
+  <div class="nav-inner container">
+    <a href="index.html" class="logo"><div class="logo-icon">🏫</div>Everest Academy</a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li><li><a href="admissions.html">Admissions</a></li>
+      <li><a href="teachers.html">Teachers</a></li><li><a href="programmes.html">Programmes</a></li>
+      <li><a href="events.html">Events</a></li><li><a href="notices.html">Notices</a></li>
+      <li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li>
     </ul>
+    <div class="nav-cta"><a href="admissions.html" class="btn btn-gold">Apply Now</a></div>
+    <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div id="mobile-nav">
+  <span onclick="toggleMenu()" class="mobile-close">✕</span>
+  <a href="about.html">About</a><a href="admissions.html">Admissions</a><a href="teachers.html">Teachers</a>
+  <a href="programmes.html">Programmes</a><a href="events.html">Events</a><a href="notices.html">Notices</a>
+  <a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+  <a href="admissions.html" class="btn btn-gold" style="margin-top:10px;text-align:center;">Apply Now</a>
+</div>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span style="color:var(--gold2);">Teachers</span></div>
+    <h1>Meet Our Teachers</h1>
+    <p>Highly qualified, passionate educators committed to bringing out the best in every student every single day.</p>
+  </div>
+</div>
+
+<section class="section" style="background:var(--white);">
+  <div class="container">
+    <div class="tag">Our Team</div>
+    <h2 class="section-title">Faculty & Staff</h2>
+    <p class="section-sub">Our 45+ educators bring expertise, warmth, and dedication to every classroom.</p>
+    <div class="grid-3 fade-in">
+      <div class="teacher-card"><div class="teacher-avatar" style="background:linear-gradient(135deg,#1a3a6b,#2a5a9f);">👩‍🏫</div><div class="teacher-info"><h4>Mrs. Sita Adhikari</h4><div class="subject">Mathematics & Science</div><p>M.Sc. Mathematics, Tribhuvan University. Specialist in problem-based learning and STEM education.</p><span class="exp">🏅 12 Years Experience</span></div></div>
+      <div class="teacher-card"><div class="teacher-avatar" style="background:linear-gradient(135deg,#2d6a2d,#4aaa4a);">👨‍🏫</div><div class="teacher-info"><h4>Mr. Rajan Thapa</h4><div class="subject">English Language & Literature</div><p>B.Ed. English, Kathmandu University. Cambridge-certified English instructor and debate coach.</p><span class="exp">🏅 9 Years Experience</span></div></div>
+      <div class="teacher-card"><div class="teacher-avatar" style="background:linear-gradient(135deg,#6a1a1a,#aa3a3a);">👩‍🏫</div><div class="teacher-info"><h4>Ms. Priya Rai</h4><div class="subject">Computer Science & ICT</div><p>M.Sc. Computer Science. Expert in programming, digital literacy, and project-based computing.</p><span class="exp">🏅 7 Years Experience</span></div></div>
+      <div class="teacher-card"><div class="teacher-avatar" style="background:linear-gradient(135deg,#4a3a6a,#7a5aaa);">👨‍🏫</div><div class="teacher-info"><h4>Mr. Bikash Gurung</h4><div class="subject">Social Studies & History</div><p>M.A. History. Experienced researcher and passionate educator who makes history come alive.</p><span class="exp">🏅 15 Years Experience</span></div></div>
+      <div class="teacher-card"><div class="teacher-avatar" style="background:linear-gradient(135deg,#2a5a4a,#4aaa8a);">👩‍🏫</div><div class="teacher-info"><h4>Mrs. Anita Shrestha</h4><div class="subject">Nepali Language & Literature</div><p>M.A. Nepali Literature. Award-winning author who inspires a deep love of language and culture.</p><span class="exp">🏅 18 Years Experience</span></div></div>
+      <div class="teacher-card"><div class="teacher-avatar" style="background:linear-gradient(135deg,#5a4a2a,#aa8a4a);">👨‍🏫</div><div class="teacher-info"><h4>Mr. Dipak Karki</h4><div class="subject">Physical Education & Sports</div><p>B.P.Ed. Sports Science. National-level athlete and champion of student health and wellbeing.</p><span class="exp">🏅 10 Years Experience</span></div></div>
+      <div class="teacher-card"><div class="teacher-avatar" style="background:linear-gradient(135deg,#1a5a6a,#2a8aaa);">👩‍🏫</div><div class="teacher-info"><h4>Mrs. Kamala Poudel</h4><div class="subject">Pre-School & Early Education</div><p>B.Ed. Early Childhood. Montessori-trained specialist dedicated to nurturing young learners.</p><span class="exp">🏅 11 Years Experience</span></div></div>
+      <div class="teacher-card"><div class="teacher-avatar" style="background:linear-gradient(135deg,#6a5a1a,#aaa02a);">👨‍🏫</div><div class="teacher-info"><h4>Mr. Suresh Bhandari</h4><div class="subject">Arts & Creative Design</div><p>Fine Arts graduate from Kathmandu Fine Arts College. Published illustrator and creative mentor.</p><span class="exp">🏅 8 Years Experience</span></div></div>
+      <div class="teacher-card"><div class="teacher-avatar" style="background:linear-gradient(135deg,#3a1a6a,#6a3aaa);">👩‍🏫</div><div class="teacher-info"><h4>Ms. Sunita Limbu</h4><div class="subject">Health Science & Biology</div><p>B.Sc. Biology, Pokhara University. Passionate about making science accessible and exciting.</p><span class="exp">🏅 6 Years Experience</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Staff Summary -->
+<section class="section" style="background:var(--navy);color:var(--white);">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:30px;text-align:center;" class="fade-in">
+      <div><h3 style="font-size:2.8rem;color:var(--gold);font-family:'Playfair Display',serif;">45+</h3><p style="color:rgba(255,255,255,.6);">Teaching Staff</p></div>
+      <div><h3 style="font-size:2.8rem;color:var(--gold);font-family:'Playfair Display',serif;">12</h3><p style="color:rgba(255,255,255,.6);">Support Staff</p></div>
+      <div><h3 style="font-size:2.8rem;color:var(--gold);font-family:'Playfair Display',serif;">85%</h3><p style="color:rgba(255,255,255,.6);">Post-Graduate Qualified</p></div>
+      <div><h3 style="font-size:2.8rem;color:var(--gold);font-family:'Playfair Display',serif;">11 yrs</h3><p style="color:rgba(255,255,255,.6);">Avg. Experience</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="logo" style="margin-bottom:8px;"><div class="logo-icon">🏫</div> Everest Academy</a><p>Nurturing excellence since 1999.</p></div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="about.html">About Us</a></li><li><a href="admissions.html">Admissions</a></li><li><a href="teachers.html">Teachers</a></li><li><a href="programmes.html">Programmes</a></li><li><a href="events.html">Events</a></li></ul></div>
+      <div class="footer-col"><h4>Academics</h4><ul><li><a href="programmes.html">Pre-School</a></li><li><a href="programmes.html">Primary</a></li><li><a href="programmes.html">Secondary</a></li><li><a href="programmes.html">STEM</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li><a href="contact.html">📍 Itahari, Sunsari</a></li><li><a href="contact.html">📞 025-123456</a></li><li><a href="contact.html">📧 info@everestacademy.edu.np</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Everest Academy. All rights reserved.</p><div class="social-links"><div class="social-btn">📘</div><div class="social-btn">📺</div><div class="social-btn">📸</div><div class="social-btn">💬</div></div></div>
+  </div>
+</footer>
+
+<script src="shared.js"></script>
 </body>
 </html>

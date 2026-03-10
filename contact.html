@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact – Everest Academy</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-inner container">
+    <a href="index.html" class="logo"><div class="logo-icon">🏫</div>Everest Academy</a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li><li><a href="admissions.html">Admissions</a></li>
+      <li><a href="teachers.html">Teachers</a></li><li><a href="programmes.html">Programmes</a></li>
+      <li><a href="events.html">Events</a></li><li><a href="notices.html">Notices</a></li>
+      <li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="admissions.html" class="btn btn-gold">Apply Now</a></div>
+    <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div id="mobile-nav">
+  <span onclick="toggleMenu()" class="mobile-close">✕</span>
+  <a href="about.html">About</a><a href="admissions.html">Admissions</a><a href="teachers.html">Teachers</a>
+  <a href="programmes.html">Programmes</a><a href="events.html">Events</a><a href="notices.html">Notices</a>
+  <a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+  <a href="admissions.html" class="btn btn-gold" style="margin-top:10px;text-align:center;">Apply Now</a>
+</div>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span style="color:var(--gold2);">Contact</span></div>
+    <h1>Get in Touch</h1>
+    <p>Whether you have a question about admissions, programmes, or anything else — our team is ready to help you.</p>
+  </div>
+</div>
+
+<section class="section" style="background:var(--white);">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info fade-in">
+        <div class="tag">Contact Us</div>
+        <h3>We'd Love to Hear From You</h3>
+        <p>Our friendly staff are here to answer your questions and guide you through the admission process. Don't hesitate to reach out.</p>
+        <div class="contact-detail">
+          <div class="contact-icon">📍</div>
+          <div><h4>Address</h4><p>Itahari, Sunsari, Province No. 1, Nepal</p></div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">📞</div>
+          <div><h4>Phone</h4><p>+977-025-123456 &nbsp;|&nbsp; +977 98XXXXXXXX</p></div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">📧</div>
+          <div><h4>Email</h4><p>info@everestacademy.edu.np</p></div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">🕐</div>
+          <div><h4>Office Hours</h4><p>Sunday – Friday: 8:00 AM – 5:00 PM<br/>Saturday: Closed</p></div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">🚌</div>
+          <div><h4>Transport Office</h4><p>For bus routes and timings: +977 98YYYYYYYY</p></div>
+        </div>
+        <div style="margin-top:24px;">
+          <div style="background:var(--light);border-radius:12px;height:220px;display:flex;align-items:center;justify-content:center;font-size:3rem;color:var(--muted);">🗺️ Map View<br/><span style="font-size:1rem;display:block;text-align:center;margin-top:10px;color:var(--muted);">Itahari, Sunsari</span></div>
+        </div>
+        <div style="margin-top:20px;">
+          <p style="font-size:.9rem;color:var(--muted);margin-bottom:12px;font-weight:600;">Follow Us</p>
+          <div class="social-links">
+            <div class="social-btn" style="background:var(--light);color:var(--navy);" title="Facebook">📘</div>
+            <div class="social-btn" style="background:var(--light);color:var(--navy);" title="YouTube">📺</div>
+            <div class="social-btn" style="background:var(--light);color:var(--navy);" title="Instagram">📸</div>
+            <div class="social-btn" style="background:var(--light);color:var(--navy);" title="Viber">💬</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form card fade-in">
+        <h3>Send Us a Message</h3>
+        <form onsubmit="submitContact(event)">
+          <div class="form-group"><input type="text" placeholder="Your Full Name *" required/></div>
+          <div class="form-group"><input type="email" placeholder="Email Address *" required/></div>
+          <div class="form-group"><input type="tel" placeholder="Phone Number"/></div>
+          <div class="form-group">
+            <select style="width:100%;padding:11px 15px;border:1.5px solid #dde2ee;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:.93rem;background:var(--white);transition:.2s;">
+              <option value="">Select Enquiry Type</option>
+              <option>General Enquiry</option>
+              <option>Admissions</option>
+              <option>Fee & Payments</option>
+              <option>Transport</option>
+              <option>Academic Query</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group"><input type="text" placeholder="Subject"/></div>
+          <div class="form-group"><textarea placeholder="Your message..." required style="min-height:120px;"></textarea></div>
+          <button type="submit" class="btn btn-gold" style="width:100%;padding:14px;">Send Message ✉️</button>
+          <div id="contact-success" style="display:none;margin-top:12px;background:rgba(39,174,96,.1);border:1px solid var(--green);border-radius:8px;padding:14px;color:var(--green);text-align:center;font-weight:600;">
+            ✅ Message sent! We'll get back to you within 24 hours.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Department Contacts -->
+<section class="section" style="background:var(--cream);">
+  <div class="container">
+    <div class="tag">Departments</div>
+    <h2 class="section-title">Department Contacts</h2>
+    <p class="section-sub">Reach the right department directly.</p>
+    <div class="grid-3 fade-in">
+      <div class="card" style="padding:28px;">
+        <div style="font-size:2rem;margin-bottom:12px;">📋</div>
+        <h4 style="font-size:1rem;margin-bottom:8px;">Admissions Office</h4>
+        <p style="font-size:.86rem;color:var(--muted);margin-bottom:10px;">For new admission inquiries, seat availability, and application status.</p>
+        <p style="font-size:.85rem;font-weight:600;">admissions@everestacademy.edu.np</p>
+      </div>
+      <div class="card" style="padding:28px;">
+        <div style="font-size:2rem;margin-bottom:12px;">💰</div>
+        <h4 style="font-size:1rem;margin-bottom:8px;">Accounts & Finance</h4>
+        <p style="font-size:.86rem;color:var(--muted);margin-bottom:10px;">For fee queries, receipts, scholarships, and payment plans.</p>
+        <p style="font-size:.85rem;font-weight:600;">accounts@everestacademy.edu.np</p>
+      </div>
+      <div class="card" style="padding:28px;">
+        <div style="font-size:2rem;margin-bottom:12px;">📚</div>
+        <h4 style="font-size:1rem;margin-bottom:8px;">Academic Department</h4>
+        <p style="font-size:.86rem;color:var(--muted);margin-bottom:10px;">For academic records, results, and curriculum queries.</p>
+        <p style="font-size:.85rem;font-weight:600;">academic@everestacademy.edu.np</p>
+      </div>
+      <div class="card" style="padding:28px;">
+        <div style="font-size:2rem;margin-bottom:12px;">🚌</div>
+        <h4 style="font-size:1rem;margin-bottom:8px;">Transport Office</h4>
+        <p style="font-size:.86rem;color:var(--muted);margin-bottom:10px;">For bus routes, pick-up times, and transport fee queries.</p>
+        <p style="font-size:.85rem;font-weight:600;">transport@everestacademy.edu.np</p>
+      </div>
+      <div class="card" style="padding:28px;">
+        <div style="font-size:2rem;margin-bottom:12px;">⚽</div>
+        <h4 style="font-size:1rem;margin-bottom:8px;">Sports Department</h4>
+        <p style="font-size:.86rem;color:var(--muted);margin-bottom:10px;">For sports team registrations, events, and equipment.</p>
+        <p style="font-size:.85rem;font-weight:600;">sports@everestacademy.edu.np</p>
+      </div>
+      <div class="card" style="padding:28px;">
+        <div style="font-size:2rem;margin-bottom:12px;">📢</div>
+        <h4 style="font-size:1rem;margin-bottom:8px;">PR & Events</h4>
+        <p style="font-size:.86rem;color:var(--muted);margin-bottom:10px;">For media enquiries, event coverage, and partnership requests.</p>
+        <p style="font-size:.85rem;font-weight:600;">pr@everestacademy.edu.np</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="logo" style="margin-bottom:8px;"><div class="logo-icon">🏫</div> Everest Academy</a><p>Nurturing excellence since 1999.</p></div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="about.html">About Us</a></li><li><a href="admissions.html">Admissions</a></li><li><a href="teachers.html">Teachers</a></li><li><a href="programmes.html">Programmes</a></li><li><a href="events.html">Events</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li><a href="contact.html">General Enquiry</a></li><li><a href="contact.html">Admissions</a></li><li><a href="contact.html">Accounts</a></li><li><a href="contact.html">Transport</a></li></ul></div>
+      <div class="footer-col"><h4>Info</h4><ul><li><a href="#">📍 Itahari, Sunsari</a></li><li><a href="#">📞 025-123456</a></li><li><a href="#">📧 info@everestacademy.edu.np</a></li><li><a href="#">🕐 Sun–Fri 8AM–5PM</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Everest Academy. All rights reserved.</p><div class="social-links"><div class="social-btn">📘</div><div class="social-btn">📺</div><div class="social-btn">📸</div><div class="social-btn">💬</div></div></div>
+  </div>
+</footer>
+
+<script src="shared.js"></script>
+</body>
+</html>

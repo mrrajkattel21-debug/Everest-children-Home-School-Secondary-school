@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Gallery – Everest Academy</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="index.css"/>
+<style>
+.gallery-full{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.gallery-full .gallery-item{height:260px;}
+.gallery-full .gallery-item:nth-child(1){grid-column:span 2;height:340px;}
+.gallery-full .gallery-item:nth-child(5){grid-column:span 2;height:260px;}
+@media(max-width:768px){
+  .gallery-full{grid-template-columns:1fr 1fr;}
+  .gallery-full .gallery-item:nth-child(1),.gallery-full .gallery-item:nth-child(5){grid-column:span 1;height:200px;}
+  .gallery-full .gallery-item{height:200px;}
+}
+@media(max-width:480px){
+  .gallery-full{grid-template-columns:1fr;}
+  .gallery-full .gallery-item{height:200px;}
+}
+</style>
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-inner container">
+    <a href="index.html" class="logo"><div class="logo-icon">🏫</div>Everest Academy</a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li><li><a href="admissions.html">Admissions</a></li>
+      <li><a href="teachers.html">Teachers</a></li><li><a href="programmes.html">Programmes</a></li>
+      <li><a href="events.html">Events</a></li><li><a href="notices.html">Notices</a></li>
+      <li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="admissions.html" class="btn btn-gold">Apply Now</a></div>
+    <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div id="mobile-nav">
+  <span onclick="toggleMenu()" class="mobile-close">✕</span>
+  <a href="about.html">About</a><a href="admissions.html">Admissions</a><a href="teachers.html">Teachers</a>
+  <a href="programmes.html">Programmes</a><a href="events.html">Events</a><a href="notices.html">Notices</a>
+  <a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+  <a href="admissions.html" class="btn btn-gold" style="margin-top:10px;text-align:center;">Apply Now</a>
+</div>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span style="color:var(--gold2);">Gallery</span></div>
+    <h1>School Life Gallery</h1>
+    <p>A glimpse into the vibrant, colourful life at Everest Academy — where every day is full of learning, joy, and growth.</p>
+  </div>
+</div>
+
+<section class="section" style="background:var(--white);">
+  <div class="container">
+    <div class="tag">School Life</div>
+    <h2 class="section-title">Graduation & Ceremonies</h2>
+    <p class="section-sub">Celebrating our students' achievements and milestones.</p>
+    <div class="gallery-full fade-in" style="margin-bottom:60px;">
+      <div class="gallery-item"><div class="gallery-box" style="background:linear-gradient(135deg,#0a1628,#1a3a6b);height:100%;">🎓</div><div class="gallery-overlay">Graduation Day 2024</div></div>
+      <div class="gallery-item"><div class="gallery-box" style="background:linear-gradient(135deg,#1a3a6b,#2a6aab);height:100%;">🏆</div><div class="gallery-overlay">Prize Distribution</div></div>
+      <div class="gallery-item"><div class="gallery-box" style="background:linear-gradient(135deg,#2a4a8b,#3a7acb);height:100%;">📜</div><div class="gallery-overlay">Certificate Ceremony</div></div>
+      <div class="gallery-item"><div class="gallery-box" style="background:linear-gradient(135deg,#0f2a52,#1a4a8b);height:100%;">👨‍👩‍👧‍👦</div><div class="gallery-overlay">Family Day</div></div>
+    </div>
+
+    <div class="tag">Sports</div>
+    <h2 class="section-title">Sports & Athletics</h2>
+    <p class="section-sub">Our students shine on the field and on the court.</p>
+    <div class="gallery-full fade-in" style="margin-bottom:60px;">
+      <div class="gallery-item"><div class="gallery-box" style="background:linear-gradient(135deg,#2d6a2d,#4aaa4a);height:100%;">⚽</div><div class="gallery-overlay">Football Championship</div></div>
+      <div class="gallery-item"><div class="gallery-box" style="background:linear-gradient(135deg,#3a8a3a,#5aca5a);height:100%;">🏃</div><div class="gallery-overlay">Annual Sports Day</div></div>
+      <div class="gallery-item"><div class="gallery-box" style="background:linear-gradient(135deg,#1a5a1a,#3a9a3a);height:100%;">🏅</div><div class="gallery-overlay">Medal Ceremony</div></div>
+      <div class="gallery-item"><div class="gallery-box" style="background:linear-gradient(135deg,#4a9a4a,#7ada7a);height:100%;">🏀</div><div class="gallery-overlay">Basketball Tournament</div></div>
+    </div>
+
+    <div class="tag">Science & Learning</div>
+    <h2 class="section-title">Labs & Classrooms</h2>
+    <p class="section-sub">Where curiosity meets discovery.</p>
+    <div class="gallery-full fade-in" style="margin-bottom:60px;">
+      <div class="gallery-item"><div class="gallery-box" style="background:linear-gradient(135deg,#6a1a1a,#aa3a3a);height:100%;">🔬</div><div class="gallery-overlay">Science Laboratory</div></div>
+      <div class="gallery-item"><div class="gallery-box" style="background:linear-gradient(135deg,#8a2a2a,#ca5a5a);height:100%;">💻</div><div class="gallery-overlay">Computer Lab</div></div>
+      <div class="gallery-item"><div class="gallery-box" style="background:linear-gradient(135deg,#aa3a3a,#ea7a7a);height:100%;">📚</div><div class="gallery-overlay">School Library</div></div>
+      <div class="gallery-item"><div class="gallery-box" style="background:linear-gradient(135deg,#7a1a1a,#ba4a4a);height:100%;">🤖</div><div class="gallery-overlay">Robotics Club</div></div>
+    </div>
+
+    <div class="tag">Culture</div>
+    <h2 class="section-title">Arts & Cultural Events</h2>
+    <p class="section-sub">Celebrating creativity and our rich Nepali heritage.</p>
+    <div class="gallery-full fade-in">
+      <div class="gallery-item"><div class="gallery-box" style="background:linear-gradient(135deg,#4a3a6a,#7a5aaa);height:100%;">🎭</div><div class="gallery-overlay">Annual Cultural Show</div></div>
+      <div class="gallery-item"><div class="gallery-box" style="background:linear-gradient(135deg,#6a4a8a,#9a6aca);height:100%;">🎨</div><div class="gallery-overlay">Art Exhibition</div></div>
+      <div class="gallery-item"><div class="gallery-box" style="background:linear-gradient(135deg,#3a2a5a,#6a4a9a);height:100%;">🎵</div><div class="gallery-overlay">Music Performance</div></div>
+      <div class="gallery-item"><div class="gallery-box" style="background:linear-gradient(135deg,#5a4a7a,#8a6aaa);height:100%;">💃</div><div class="gallery-overlay">Dance Competition</div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="logo" style="margin-bottom:8px;"><div class="logo-icon">🏫</div> Everest Academy</a><p>Nurturing excellence since 1999.</p></div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="about.html">About Us</a></li><li><a href="admissions.html">Admissions</a></li><li><a href="teachers.html">Teachers</a></li><li><a href="programmes.html">Programmes</a></li><li><a href="events.html">Events</a></li></ul></div>
+      <div class="footer-col"><h4>Gallery</h4><ul><li><a href="gallery.html">Graduation</a></li><li><a href="gallery.html">Sports</a></li><li><a href="gallery.html">Science Labs</a></li><li><a href="gallery.html">Cultural Events</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li><a href="contact.html">📍 Itahari, Sunsari</a></li><li><a href="contact.html">📞 025-123456</a></li><li><a href="contact.html">📧 info@everestacademy.edu.np</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Everest Academy. All rights reserved.</p><div class="social-links"><div class="social-btn">📘</div><div class="social-btn">📺</div><div class="social-btn">📸</div><div class="social-btn">💬</div></div></div>
+  </div>
+</footer>
+
+<script src="shared.js"></script>
+</body>
+</html>
